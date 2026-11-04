@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #171613;
+  --color-charcoal-pure: #0E0D0B;
+  --color-charcoal-card: #201E1A;
+  --color-charcoal-muted: #2C2923;
+  --color-charcoal-border: #38342D;
+
+  --color-ivory: #F5F0E8;
+  --color-ivory-light: #FAF7F2;
+  --color-ivory-dark: #E8DFC8;
+  --color-ivory-border: #E2D7C5;
+
+  --color-orange: #D97736;
+  --color-orange-hover: #C56525;
+  --color-orange-light: #FBEFE7;
+  --color-orange-dark: #A9531C;
+
+  --color-sand: #B9A58C;
+  --color-sand-light: #DFD5C6;
+  --color-sand-dark: #8E785D;
+
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B9A58C88;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D97736;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(245, 240, 232, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(185, 165, 140, 0.3);
+}
+
+.dark .glass-panel {
+  background: rgba(23, 22, 19, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 52, 45, 0.7);
+}
+
+/* Custom utility shadows & borders */
+.luxury-border {
+  border: 1px solid rgba(185, 165, 140, 0.25);
+}
+
+.dark .luxury-border {
+  border: 1px solid rgba(56, 52, 45, 0.8);
+}
+
+.luxury-card {
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -12px rgba(23, 22, 19, 0.12);
+}
+
+.dark .luxury-card:hover {
+  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.6);
+}
