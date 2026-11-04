@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SalonX – Premium Salon & Beauty Booking Marketplace
 
 > **Tagline:** *Your Style. Your Salon. Your Time.*
@@ -129,3 +130,6 @@ H2 Database Console: [http://localhost:8080/h2-console](http://localhost:8080/h2
 - `SALONX50`: 50% OFF up to ₹500 (Min. booking ₹800)
 - `LUXE20`: 20% OFF up to ₹800 on Premier Luxe salons (Min. booking ₹1500)
 - `GLOWUP`: Flat ₹300 OFF (Min. booking ₹1200)
+=======
+# SalonX
+>>>>>>> b7426df227da61d6c98e3c7586551a2b32bde556
